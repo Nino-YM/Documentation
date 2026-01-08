@@ -1,0 +1,27 @@
+{
+  "feature": "writing score",
+  "description": "Score en expression écrite",
+  "dtype": "int64",
+  "missing_values": 0,
+  "missing_rate": 0.0,
+  "unique_values": 77,
+  "unit": "score (0–100)",
+  "min": 10.0,
+  "max": 100.0,
+  "mean": 68.054,
+  "median": 69.0,
+  "std": 15.19565701086965,
+  "quartiles": {
+    "q1": 57.75,
+    "q3": 79.0,
+    "iqr": 21.25
+  },
+  "outliers_iqr_count": 5,
+  "sample_values": [
+    74,
+    88,
+    93,
+    44,
+    75
+  ]
+}

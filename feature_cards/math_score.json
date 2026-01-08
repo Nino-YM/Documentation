@@ -1,0 +1,27 @@
+{
+  "feature": "math score",
+  "description": "Score en mathématiques",
+  "dtype": "int64",
+  "missing_values": 0,
+  "missing_rate": 0.0,
+  "unique_values": 81,
+  "unit": "score (0–100)",
+  "min": 0.0,
+  "max": 100.0,
+  "mean": 66.089,
+  "median": 66.0,
+  "std": 15.16308009600945,
+  "quartiles": {
+    "q1": 57.0,
+    "q3": 77.0,
+    "iqr": 20.0
+  },
+  "outliers_iqr_count": 8,
+  "sample_values": [
+    72,
+    69,
+    90,
+    47,
+    76
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "feature": "test preparation course",
+  "description": "Préparation au test (aucune vs complétée)",
+  "dtype": "object",
+  "missing_values": 0,
+  "missing_rate": 0.0,
+  "unique_values": 2,
+  "categories_top5": {
+    "none": 642,
+    "completed": 358
+  },
+  "categories_top5_rate": {
+    "none": 0.642,
+    "completed": 0.358
+  },
+  "sample_values": [
+    "none",
+    "completed"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "feature": "reading score",
+  "description": "Score en compréhension écrite",
+  "dtype": "int64",
+  "missing_values": 0,
+  "missing_rate": 0.0,
+  "unique_values": 72,
+  "unit": "score (0–100)",
+  "min": 17.0,
+  "max": 100.0,
+  "mean": 69.169,
+  "median": 70.0,
+  "std": 14.600191937252216,
+  "quartiles": {
+    "q1": 59.0,
+    "q3": 79.0,
+    "iqr": 20.0
+  },
+  "outliers_iqr_count": 6,
+  "sample_values": [
+    72,
+    90,
+    95,
+    57,
+    78
+  ]
+}

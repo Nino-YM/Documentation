@@ -1,0 +1,29 @@
+{
+  "feature": "parental level of education",
+  "description": "Niveau d’étude du/des parent(s)",
+  "dtype": "object",
+  "missing_values": 0,
+  "missing_rate": 0.0,
+  "unique_values": 6,
+  "categories_top5": {
+    "some college": 226,
+    "associate's degree": 222,
+    "high school": 196,
+    "some high school": 179,
+    "bachelor's degree": 118
+  },
+  "categories_top5_rate": {
+    "some college": 0.226,
+    "associate's degree": 0.222,
+    "high school": 0.196,
+    "some high school": 0.179,
+    "bachelor's degree": 0.118
+  },
+  "sample_values": [
+    "bachelor's degree",
+    "some college",
+    "master's degree",
+    "associate's degree",
+    "high school"
+  ]
+}

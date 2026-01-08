@@ -1,0 +1,20 @@
+{
+  "feature": "lunch",
+  "description": "Type de repas (standard vs free/reduced)",
+  "dtype": "object",
+  "missing_values": 0,
+  "missing_rate": 0.0,
+  "unique_values": 2,
+  "categories_top5": {
+    "standard": 645,
+    "free/reduced": 355
+  },
+  "categories_top5_rate": {
+    "standard": 0.645,
+    "free/reduced": 0.355
+  },
+  "sample_values": [
+    "standard",
+    "free/reduced"
+  ]
+}

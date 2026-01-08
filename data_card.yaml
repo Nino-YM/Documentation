@@ -1,0 +1,13 @@
+name: Students Performance  
+version: 1.0  
+domain: Éducation  
+created: 2026-01-08  
+intended_use: Analyse et recommandation des performances étudiantes  
+data_source: Enquêtes scolaires anonymisées fournies par un établissement éducatif  
+coverage: Étudiants — performances académiques  
+collection_method: Jeu de données CSV transmis par l’école  
+period_covered: Instantané (non temporel)  
+notes: |
+  Ce dataset est utilisé dans un cadre pédagogique pour analyser les scores
+  en mathématiques, lecture et écriture, ainsi que les facteurs socio-éducatifs
+  associés (repas, préparation, niveau d’éducation parentale, etc.)

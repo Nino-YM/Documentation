@@ -1,0 +1,29 @@
+{
+  "feature": "race/ethnicity",
+  "description": "Groupe ethnique déclaré (catégories A–E)",
+  "dtype": "object",
+  "missing_values": 0,
+  "missing_rate": 0.0,
+  "unique_values": 5,
+  "categories_top5": {
+    "group C": 319,
+    "group D": 262,
+    "group B": 190,
+    "group E": 140,
+    "group A": 89
+  },
+  "categories_top5_rate": {
+    "group C": 0.319,
+    "group D": 0.262,
+    "group B": 0.19,
+    "group E": 0.14,
+    "group A": 0.089
+  },
+  "sample_values": [
+    "group B",
+    "group C",
+    "group A",
+    "group D",
+    "group E"
+  ]
+}

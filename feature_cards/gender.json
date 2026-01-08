@@ -1,0 +1,20 @@
+{
+  "feature": "gender",
+  "description": "Sexe déclaré de l’étudiant",
+  "dtype": "object",
+  "missing_values": 0,
+  "missing_rate": 0.0,
+  "unique_values": 2,
+  "categories_top5": {
+    "female": 518,
+    "male": 482
+  },
+  "categories_top5_rate": {
+    "female": 0.518,
+    "male": 0.482
+  },
+  "sample_values": [
+    "female",
+    "male"
+  ]
+}
