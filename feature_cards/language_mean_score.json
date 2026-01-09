@@ -1,0 +1,27 @@
+{
+  "feature": "language mean score",
+  "description": "Moyenne des scores reading et writing",
+  "dtype": "float64",
+  "missing_values": 0,
+  "missing_rate": 0.0,
+  "unique_values": 138,
+  "unit": "score (0–100)",
+  "min": 13.5,
+  "max": 100.0,
+  "mean": 68.6115,
+  "median": 69.5,
+  "std": 14.727923461217454,
+  "quartiles": {
+    "q1": 58.5,
+    "q3": 79.0,
+    "iqr": 20.5
+  },
+  "outliers_iqr_count": 6,
+  "sample_values": [
+    73.0,
+    89.0,
+    94.0,
+    50.5,
+    76.5
+  ]
+}

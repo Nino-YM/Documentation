@@ -1,13 +1,228 @@
-name: Students Performance  
-version: 1.0  
-domain: Éducation  
-created: 2026-01-08  
-intended_use: Analyse et recommandation des performances étudiantes  
-data_source: Enquêtes scolaires anonymisées fournies par un établissement éducatif  
-coverage: Étudiants — performances académiques  
-collection_method: Jeu de données CSV transmis par l’école  
-period_covered: Instantané (non temporel)  
-notes: |
-  Ce dataset est utilisé dans un cadre pédagogique pour analyser les scores
+name: Students Performance
+version: '1.0'
+domain: education
+created: '2026-01-08'
+intended_use: Analyse et recommandation des performances étudiantes
+data_source: Collecté par enquêtes scolaires anonymisées
+coverage: Étudiants — performances académiques
+collection_method: Fichier fourni par un établissement éducatif
+period_covered: Non temporel (instantané)
+notes: 'Ce dataset est utilisé dans un cadre pédagogique pour analyser les scores
+
   en mathématiques, lecture et écriture, ainsi que les facteurs socio-éducatifs
+
   associés (repas, préparation, niveau d’éducation parentale, etc.)
+
+  '
+feature_cards:
+  format: json
+  directory: feature_cards/
+  files:
+    gender: feature_cards/gender.json
+    race/ethnicity: feature_cards/race_ethnicity.json
+    parental level of education: feature_cards/parental_level_of_education.json
+    lunch: feature_cards/lunch.json
+    test preparation course: feature_cards/test_preparation_course.json
+    math score: feature_cards/math_score.json
+    reading score: feature_cards/reading_score.json
+    writing score: feature_cards/writing_score.json
+    language mean score: feature_cards/language_mean_score.json
+  details:
+    gender:
+      feature: gender
+      description: Sexe déclaré de l’étudiant
+      dtype: object
+      missing_values: 0
+      missing_rate: 0.0
+      unique_values: 2
+      categories_top5:
+        female: 518
+        male: 482
+      categories_top5_rate:
+        female: 0.518
+        male: 0.482
+      sample_values:
+      - female
+      - male
+    race/ethnicity:
+      feature: race/ethnicity
+      description: Groupe ethnique déclaré (catégories A–E)
+      dtype: object
+      missing_values: 0
+      missing_rate: 0.0
+      unique_values: 5
+      categories_top5:
+        group C: 319
+        group D: 262
+        group B: 190
+        group E: 140
+        group A: 89
+      categories_top5_rate:
+        group C: 0.319
+        group D: 0.262
+        group B: 0.19
+        group E: 0.14
+        group A: 0.089
+      sample_values:
+      - group B
+      - group C
+      - group A
+      - group D
+      - group E
+    parental level of education:
+      feature: parental level of education
+      description: Niveau d’étude du/des parent(s)
+      dtype: object
+      missing_values: 0
+      missing_rate: 0.0
+      unique_values: 6
+      categories_top5:
+        some college: 226
+        associate's degree: 222
+        high school: 196
+        some high school: 179
+        bachelor's degree: 118
+      categories_top5_rate:
+        some college: 0.226
+        associate's degree: 0.222
+        high school: 0.196
+        some high school: 0.179
+        bachelor's degree: 0.118
+      sample_values:
+      - bachelor's degree
+      - some college
+      - master's degree
+      - associate's degree
+      - high school
+    lunch:
+      feature: lunch
+      description: Type de repas (standard vs free/reduced)
+      dtype: object
+      missing_values: 0
+      missing_rate: 0.0
+      unique_values: 2
+      categories_top5:
+        standard: 645
+        free/reduced: 355
+      categories_top5_rate:
+        standard: 0.645
+        free/reduced: 0.355
+      sample_values:
+      - standard
+      - free/reduced
+    test preparation course:
+      feature: test preparation course
+      description: Préparation au test (aucune vs complétée)
+      dtype: object
+      missing_values: 0
+      missing_rate: 0.0
+      unique_values: 2
+      categories_top5:
+        none: 642
+        completed: 358
+      categories_top5_rate:
+        none: 0.642
+        completed: 0.358
+      sample_values:
+      - none
+      - completed
+    math score:
+      feature: math score
+      description: Score en mathématiques
+      dtype: int64
+      missing_values: 0
+      missing_rate: 0.0
+      unique_values: 81
+      unit: score (0–100)
+      min: 0.0
+      max: 100.0
+      mean: 66.089
+      median: 66.0
+      std: 15.16308009600945
+      quartiles:
+        q1: 57.0
+        q3: 77.0
+        iqr: 20.0
+      outliers_iqr_count: 8
+      sample_values:
+      - 72
+      - 69
+      - 90
+      - 47
+      - 76
+    reading score:
+      feature: reading score
+      description: Score en compréhension écrite
+      dtype: int64
+      missing_values: 0
+      missing_rate: 0.0
+      unique_values: 72
+      unit: score (0–100)
+      min: 17.0
+      max: 100.0
+      mean: 69.169
+      median: 70.0
+      std: 14.600191937252216
+      quartiles:
+        q1: 59.0
+        q3: 79.0
+        iqr: 20.0
+      outliers_iqr_count: 6
+      sample_values:
+      - 72
+      - 90
+      - 95
+      - 57
+      - 78
+    writing score:
+      feature: writing score
+      description: Score en expression écrite
+      dtype: int64
+      missing_values: 0
+      missing_rate: 0.0
+      unique_values: 77
+      unit: score (0–100)
+      min: 10.0
+      max: 100.0
+      mean: 68.054
+      median: 69.0
+      std: 15.19565701086965
+      quartiles:
+        q1: 57.75
+        q3: 79.0
+        iqr: 21.25
+      outliers_iqr_count: 5
+      sample_values:
+      - 74
+      - 88
+      - 93
+      - 44
+      - 75
+    language mean score:
+      feature: language mean score
+      description: Moyenne des scores reading et writing
+      dtype: float64
+      missing_values: 0
+      missing_rate: 0.0
+      unique_values: 138
+      unit: score (0–100)
+      min: 13.5
+      max: 100.0
+      mean: 68.6115
+      median: 69.5
+      std: 14.727923461217454
+      quartiles:
+        q1: 58.5
+        q3: 79.0
+        iqr: 20.5
+      outliers_iqr_count: 6
+      sample_values:
+      - 73.0
+      - 89.0
+      - 94.0
+      - 50.5
+      - 76.5
+artifacts:
+  students_modified: StudentsPerformance_modified.csv
+  correlation_matrix: StudentsPerformance_corr.csv
+  correlation_heatmap_image: Correlation matrix displayed in notebook
