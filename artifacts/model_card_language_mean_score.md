@@ -8,7 +8,7 @@
 - **Categorical features**: ['gender', 'race/ethnicity', 'parental level of education', 'lunch', 'test preparation course']
 
 ## Data & preprocessing
-- Dataset: 'StudentsPerformance_modified.csv'
+- Dataset: 'data/StudentsPerformance_modified.csv'
 - Categorical handling: CatBoost native categorical support (no one-hot)
 
 ## Training procedure

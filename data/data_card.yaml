@@ -16,17 +16,17 @@ notes: 'Ce dataset est utilisé dans un cadre pédagogique pour analyser les sco
   '
 feature_cards:
   format: json
-  directory: feature_cards/
+  directory: data/feature_cards/
   files:
-    gender: feature_cards/gender.json
-    race/ethnicity: feature_cards/race_ethnicity.json
-    parental level of education: feature_cards/parental_level_of_education.json
-    lunch: feature_cards/lunch.json
-    test preparation course: feature_cards/test_preparation_course.json
-    math score: feature_cards/math_score.json
-    reading score: feature_cards/reading_score.json
-    writing score: feature_cards/writing_score.json
-    language mean score: feature_cards/language_mean_score.json
+    gender: data/feature_cards/gender.json
+    race/ethnicity: data/feature_cards/race_ethnicity.json
+    parental level of education: data/feature_cards/parental_level_of_education.json
+    lunch: data/feature_cards/lunch.json
+    test preparation course: data/feature_cards/test_preparation_course.json
+    math score: data/feature_cards/math_score.json
+    reading score: data/feature_cards/reading_score.json
+    writing score: data/feature_cards/writing_score.json
+    language mean score: data/feature_cards/language_mean_score.json
   details:
     gender:
       feature: gender
@@ -223,6 +223,6 @@ feature_cards:
       - 50.5
       - 76.5
 artifacts:
-  students_modified: StudentsPerformance_modified.csv
-  correlation_matrix: StudentsPerformance_corr.csv
+  students_modified: data/StudentsPerformance_modified.csv
+  correlation_matrix: data/StudentsPerformance_corr.csv
   correlation_heatmap_image: Correlation matrix displayed in notebook
