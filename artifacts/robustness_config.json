@@ -1,0 +1,13 @@
+{
+  "robustness_threshold": -0.6222312054852478,
+  "coverage_at_threshold_pct": 90.5,
+  "rmse_math_base": 14.3761,
+  "rmse_lang_base": 13.2784,
+  "rmse_math_at_threshold": 14.1273,
+  "rmse_lang_at_threshold": 13.3404,
+  "zones": {
+    "robustesse": "score >= -0.6222",
+    "normale": "-0.4 <= score < -0.6222",
+    "extrapolation": "score < -0.4"
+  }
+}

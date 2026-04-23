@@ -1,0 +1,5 @@
+entree,score_isolation_forest,anomalie_detectee,zone_de_confiance,prediction_math_score,prediction_language_mean_score
+1,-0.5258,True,Zone de robustesse (haute confiance),65.16,70.37
+2,-0.6478,True,Zone d'extrapolation (faible confiance — prédiction incertaine),65.35,62.9
+3,-0.5428,True,Zone de robustesse (haute confiance),74.07,83.14
+4,-0.5798,True,Zone de robustesse (haute confiance),61.68,58.68
